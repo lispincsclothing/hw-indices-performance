@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.2.14'
+gem 'rails', '4.0.0'
 ruby '1.9.3'
 
 # Bundle edge Rails instead:
@@ -8,9 +8,9 @@ ruby '1.9.3'
 
 # for Heroku deployment - as described in Ap. A of ELLS book
 group :test do
-  gem 'cucumber-rails', :require => false
-  gem 'cucumber-rails-training-wheels'
-  gem 'rspec-rails'
+  gem 'cucumber-rails', '>= 1.4.0', :require => false
+  gem 'cucumber-rails-training-wheels', '>= 1.0.0'
+  gem 'rspec-rails', '>= 2.14.0'
   gem 'simplecov'
 end
 group :development, :test do
@@ -30,12 +30,12 @@ end
 # in production environments by default.
 group :assets do
   gem 'therubyracer'
-  gem 'sass-rails', "  ~> 3.2.6"
-  gem 'coffee-rails', "~> 3.2.2"
-  gem 'uglifier'
+  gem 'sass-rails', '~> 4.0.0'
+  gem 'coffee-rails', '~> 4.0.0'
+  gem 'uglifier', '>= 2.3.2'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 3.0.4'
 
 # Use unicorn as the web server
 # gem 'unicorn'
